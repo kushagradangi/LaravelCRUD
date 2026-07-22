@@ -9,6 +9,14 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdn.tiny.cloud/1/pnvzv73ewgkguulsu7vgpj2cfohqa7f65nwkhv8mfg5ol5fz/tinymce/8/tinymce.min.js" referrerpolicy="origin" crossorigin="anonymous"></script>
+  <script>
+    tinymce.init({
+        selector:'#mytextarea'
+    })
+  </script>
+  
 </head>
 <body>
 
@@ -56,6 +64,7 @@
                         <div class="form-group">
                             <label>Description</label>
                             <textarea
+                                id="mytextarea"
                                 class="form-control"
                                 rows="4"
                                 name="description">
